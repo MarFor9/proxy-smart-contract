@@ -1,0 +1,1106 @@
+{
+  "manifestVersion": "3.2",
+  "admin": {
+    "address": "0x18B6C613737aab508a90Dcff02BA2079CC38AaDc",
+    "txHash": "0x17979da5f3725779cfdcba03d4da40530c14170d7992bde85202b2e04e7c3346"
+  },
+  "proxies": [
+    {
+      "address": "0x5c7cB2D007218404a2f38aDE9738735Faf56a8C6",
+      "txHash": "0xe26d3648b34815de8e9073a51318d9523601eb1afaec47909e48893450ff747c",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x601dd16c59cED9e91BdcDAb1715295eEFf7fC1F9",
+      "txHash": "0xb3c41f08f068793f5bd42f0c3037bc2f7bbb05c17990b4d37b7c6970cb95d139",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x5963f8f6057EFe07825Cfa4bd725cD24Cb7165AD",
+      "txHash": "0x3bfb3cffa048c4d4311dc2cee6b468ab3873008287c76ad3ea708331866a54cc",
+      "kind": "transparent"
+    },
+    {
+      "address": "0xc747f75e48B7890c7fd174357a6f42F9a470e460",
+      "txHash": "0xf2b06ae8937833dcffb0d318b9a2be4e6ebd82d34e6b46970d679cf1ac07ba3d",
+      "kind": "transparent"
+    },
+    {
+      "address": "0xD3e4702db965B10F86F44229691BC1cD6059db1F",
+      "txHash": "0x9d875a8687f377f474e55f644f6cfc42a74e2c587d08f0608cec2189949150e2",
+      "kind": "transparent"
+    },
+    {
+      "address": "0xA058107BB254feE535f56fB7188566a997ceA466",
+      "txHash": "0xb22248f48955e2c0830c47af68095fb8ddb603e24bdfc2bf176f35fd74ea0606",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x55Fde3ff9DA36233B31e14F63054C9e11342a772",
+      "txHash": "0x44f32b8b2b865422885b4d0d907b151f87b786f86d748df51077749399308882",
+      "kind": "transparent"
+    }
+  ],
+  "impls": {
+    "2bad381442d65d5df46f34632bdf3496c336ad7446159c1ecf8cc73a9b565985": {
+      "address": "0xc72A1cC1c54a630E32866f126400b027BA54bE53",
+      "txHash": "0x5758bb4d3c82eb0d706a40e831d53ac46c958d8cf67663ce419bf2fa85d70eef",
+      "layout": {
+        "solcVersion": "0.8.11",
+        "storage": [
+          {
+            "label": "_initialized",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint8",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:62",
+            "retypedFrom": "bool"
+          },
+          {
+            "label": "_initializing",
+            "offset": 1,
+            "slot": "0",
+            "type": "t_bool",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:67"
+          },
+          {
+            "label": "companies",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_mapping(t_string_memory_ptr,t_struct(Company)462_storage)",
+            "contract": "CompanyStorage",
+            "src": "contracts/CompanyStorage.sol:11"
+          },
+          {
+            "label": "didsByStatus",
+            "offset": 0,
+            "slot": "2",
+            "type": "t_mapping(t_string_memory_ptr,t_array(t_string_storage)dyn_storage)",
+            "contract": "CompanyStorage",
+            "src": "contracts/CompanyStorage.sol:12"
+          },
+          {
+            "label": "indexOfDid",
+            "offset": 0,
+            "slot": "3",
+            "type": "t_mapping(t_string_memory_ptr,t_uint256)",
+            "contract": "CompanyStorage",
+            "src": "contracts/CompanyStorage.sol:13"
+          }
+        ],
+        "types": {
+          "t_array(t_string_storage)dyn_storage": {
+            "label": "string[]",
+            "numberOfBytes": "32"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_mapping(t_string_memory_ptr,t_array(t_string_storage)dyn_storage)": {
+            "label": "mapping(string => string[])",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_string_memory_ptr,t_struct(Company)462_storage)": {
+            "label": "mapping(string => struct CompanyStorage.Company)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_string_memory_ptr,t_uint256)": {
+            "label": "mapping(string => uint256)",
+            "numberOfBytes": "32"
+          },
+          "t_string_memory_ptr": {
+            "label": "string",
+            "numberOfBytes": "32"
+          },
+          "t_string_storage": {
+            "label": "string",
+            "numberOfBytes": "32"
+          },
+          "t_struct(Company)462_storage": {
+            "label": "struct CompanyStorage.Company",
+            "members": [
+              {
+                "label": "did",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "status",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "1"
+              }
+            ],
+            "numberOfBytes": "64"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          },
+          "t_uint8": {
+            "label": "uint8",
+            "numberOfBytes": "1"
+          }
+        }
+      }
+    },
+    "1075aad30d94e7abe3b031d2300e4bf06d43451b13a80705788950bcb7da6c03": {
+      "address": "0x948Decc9359b4D638df633318f028606A5214887",
+      "txHash": "0x2bab222b1983ebed49ffa1ae2ad648213e8dbad2b5df799e71228082986abf5e",
+      "layout": {
+        "solcVersion": "0.8.11",
+        "storage": [
+          {
+            "label": "_initialized",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint8",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:62",
+            "retypedFrom": "bool"
+          },
+          {
+            "label": "_initializing",
+            "offset": 1,
+            "slot": "0",
+            "type": "t_bool",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:67"
+          },
+          {
+            "label": "companies",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_mapping(t_string_memory_ptr,t_struct(Company)462_storage)",
+            "contract": "CompanyStorageV2",
+            "src": "contracts/CompanyStorageV2.sol:11"
+          },
+          {
+            "label": "didsByStatus",
+            "offset": 0,
+            "slot": "2",
+            "type": "t_mapping(t_string_memory_ptr,t_array(t_string_storage)dyn_storage)",
+            "contract": "CompanyStorageV2",
+            "src": "contracts/CompanyStorageV2.sol:12"
+          },
+          {
+            "label": "indexOfDid",
+            "offset": 0,
+            "slot": "3",
+            "type": "t_mapping(t_string_memory_ptr,t_uint256)",
+            "contract": "CompanyStorageV2",
+            "src": "contracts/CompanyStorageV2.sol:13"
+          }
+        ],
+        "types": {
+          "t_array(t_string_storage)dyn_storage": {
+            "label": "string[]",
+            "numberOfBytes": "32"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_mapping(t_string_memory_ptr,t_array(t_string_storage)dyn_storage)": {
+            "label": "mapping(string => string[])",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_string_memory_ptr,t_struct(Company)462_storage)": {
+            "label": "mapping(string => struct CompanyStorageV2.Company)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_string_memory_ptr,t_uint256)": {
+            "label": "mapping(string => uint256)",
+            "numberOfBytes": "32"
+          },
+          "t_string_memory_ptr": {
+            "label": "string",
+            "numberOfBytes": "32"
+          },
+          "t_string_storage": {
+            "label": "string",
+            "numberOfBytes": "32"
+          },
+          "t_struct(Company)462_storage": {
+            "label": "struct CompanyStorageV2.Company",
+            "members": [
+              {
+                "label": "did",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "status",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "1"
+              }
+            ],
+            "numberOfBytes": "64"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          },
+          "t_uint8": {
+            "label": "uint8",
+            "numberOfBytes": "1"
+          }
+        }
+      }
+    },
+    "6332650b2e597b52cd1e05162556a5eee03a4389bafaa7db47348fbb31c4ff36": {
+      "address": "0xBE6842E825620D1B147e278Ffb7020D98E9ce113",
+      "txHash": "0x78bf88df7836caf74f1a1adb01540a6dcc3f3b9f5ee640b0b7103977cfa3894e",
+      "layout": {
+        "solcVersion": "0.8.11",
+        "storage": [
+          {
+            "label": "_initialized",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint8",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:62",
+            "retypedFrom": "bool"
+          },
+          {
+            "label": "_initializing",
+            "offset": 1,
+            "slot": "0",
+            "type": "t_bool",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:67"
+          },
+          {
+            "label": "companies",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_mapping(t_string_memory_ptr,t_struct(Company)462_storage)",
+            "contract": "CompanyStorage",
+            "src": "contracts/CompanyStorage.sol:11"
+          },
+          {
+            "label": "didsByStatus",
+            "offset": 0,
+            "slot": "2",
+            "type": "t_mapping(t_string_memory_ptr,t_array(t_string_storage)dyn_storage)",
+            "contract": "CompanyStorage",
+            "src": "contracts/CompanyStorage.sol:12"
+          },
+          {
+            "label": "indexOfDid",
+            "offset": 0,
+            "slot": "3",
+            "type": "t_mapping(t_string_memory_ptr,t_uint256)",
+            "contract": "CompanyStorage",
+            "src": "contracts/CompanyStorage.sol:13"
+          }
+        ],
+        "types": {
+          "t_array(t_string_storage)dyn_storage": {
+            "label": "string[]",
+            "numberOfBytes": "32"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_mapping(t_string_memory_ptr,t_array(t_string_storage)dyn_storage)": {
+            "label": "mapping(string => string[])",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_string_memory_ptr,t_struct(Company)462_storage)": {
+            "label": "mapping(string => struct CompanyStorage.Company)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_string_memory_ptr,t_uint256)": {
+            "label": "mapping(string => uint256)",
+            "numberOfBytes": "32"
+          },
+          "t_string_memory_ptr": {
+            "label": "string",
+            "numberOfBytes": "32"
+          },
+          "t_string_storage": {
+            "label": "string",
+            "numberOfBytes": "32"
+          },
+          "t_struct(Company)462_storage": {
+            "label": "struct CompanyStorage.Company",
+            "members": [
+              {
+                "label": "did",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "status",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "1"
+              }
+            ],
+            "numberOfBytes": "64"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          },
+          "t_uint8": {
+            "label": "uint8",
+            "numberOfBytes": "1"
+          }
+        }
+      }
+    },
+    "1733b8e395083d4520942f7d5270806c1401d8f012e6c9a402ff34afb5bf51c4": {
+      "address": "0x1b24D90F2210d6DF2fA19acAEF1e717BDB7A4668",
+      "txHash": "0xaeb87db2dee1b33c8c25a0c339f6dd0fce5f54d9c790e828acc89394c842131a",
+      "layout": {
+        "solcVersion": "0.8.11",
+        "storage": [
+          {
+            "label": "_initialized",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint8",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:62",
+            "retypedFrom": "bool"
+          },
+          {
+            "label": "_initializing",
+            "offset": 1,
+            "slot": "0",
+            "type": "t_bool",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:67"
+          },
+          {
+            "label": "companies",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_mapping(t_string_memory_ptr,t_struct(Company)782_storage)",
+            "contract": "CompanyStorageV2",
+            "src": "contracts/CompanyStorageV2.sol:11"
+          },
+          {
+            "label": "didsByStatus",
+            "offset": 0,
+            "slot": "2",
+            "type": "t_mapping(t_string_memory_ptr,t_array(t_string_storage)dyn_storage)",
+            "contract": "CompanyStorageV2",
+            "src": "contracts/CompanyStorageV2.sol:12"
+          },
+          {
+            "label": "indexOfDid",
+            "offset": 0,
+            "slot": "3",
+            "type": "t_mapping(t_string_memory_ptr,t_uint256)",
+            "contract": "CompanyStorageV2",
+            "src": "contracts/CompanyStorageV2.sol:13"
+          }
+        ],
+        "types": {
+          "t_array(t_string_storage)dyn_storage": {
+            "label": "string[]",
+            "numberOfBytes": "32"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_mapping(t_string_memory_ptr,t_array(t_string_storage)dyn_storage)": {
+            "label": "mapping(string => string[])",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_string_memory_ptr,t_struct(Company)782_storage)": {
+            "label": "mapping(string => struct CompanyStorageV2.Company)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_string_memory_ptr,t_uint256)": {
+            "label": "mapping(string => uint256)",
+            "numberOfBytes": "32"
+          },
+          "t_string_memory_ptr": {
+            "label": "string",
+            "numberOfBytes": "32"
+          },
+          "t_string_storage": {
+            "label": "string",
+            "numberOfBytes": "32"
+          },
+          "t_struct(Company)782_storage": {
+            "label": "struct CompanyStorageV2.Company",
+            "members": [
+              {
+                "label": "did",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "status",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "1"
+              }
+            ],
+            "numberOfBytes": "64"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          },
+          "t_uint8": {
+            "label": "uint8",
+            "numberOfBytes": "1"
+          }
+        }
+      }
+    },
+    "e1c5fa24341f64c21140ee781e0dd1a0348bbdab2e76ffa3aae7e8df9360d177": {
+      "address": "0x3d3b72be986d1F39b6e5fc1670b16709f3778484",
+      "txHash": "0x1fce17e83dcb8597d1f4306bf6dd8542b7f59ec4c878a63ceee02f5207880332",
+      "layout": {
+        "solcVersion": "0.8.11",
+        "storage": [
+          {
+            "label": "_initialized",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint8",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:62",
+            "retypedFrom": "bool"
+          },
+          {
+            "label": "_initializing",
+            "offset": 1,
+            "slot": "0",
+            "type": "t_bool",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:67"
+          },
+          {
+            "label": "companies",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_mapping(t_string_memory_ptr,t_struct(Company)462_storage)",
+            "contract": "CompanyStorage",
+            "src": "contracts/CompanyStorage.sol:11"
+          },
+          {
+            "label": "didsByStatus",
+            "offset": 0,
+            "slot": "2",
+            "type": "t_mapping(t_string_memory_ptr,t_array(t_string_storage)dyn_storage)",
+            "contract": "CompanyStorage",
+            "src": "contracts/CompanyStorage.sol:12"
+          },
+          {
+            "label": "indexOfDid",
+            "offset": 0,
+            "slot": "3",
+            "type": "t_mapping(t_string_memory_ptr,t_uint256)",
+            "contract": "CompanyStorage",
+            "src": "contracts/CompanyStorage.sol:13"
+          }
+        ],
+        "types": {
+          "t_array(t_string_storage)dyn_storage": {
+            "label": "string[]",
+            "numberOfBytes": "32"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_mapping(t_string_memory_ptr,t_array(t_string_storage)dyn_storage)": {
+            "label": "mapping(string => string[])",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_string_memory_ptr,t_struct(Company)462_storage)": {
+            "label": "mapping(string => struct CompanyStorage.Company)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_string_memory_ptr,t_uint256)": {
+            "label": "mapping(string => uint256)",
+            "numberOfBytes": "32"
+          },
+          "t_string_memory_ptr": {
+            "label": "string",
+            "numberOfBytes": "32"
+          },
+          "t_string_storage": {
+            "label": "string",
+            "numberOfBytes": "32"
+          },
+          "t_struct(Company)462_storage": {
+            "label": "struct CompanyStorage.Company",
+            "members": [
+              {
+                "label": "did",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "status",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "1"
+              }
+            ],
+            "numberOfBytes": "64"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          },
+          "t_uint8": {
+            "label": "uint8",
+            "numberOfBytes": "1"
+          }
+        }
+      }
+    },
+    "6580436d44dd59e976c53a163203edf9111c72c83d09e6f4f9a1fee8a555e94b": {
+      "address": "0x6238998E5aF9A14EFfA07c2117F73f2089396196",
+      "txHash": "0xe64e79a3995b5f96d7f2b9dba8e59e0a77bdb78cd67e56924c3c50b664bc01f7",
+      "layout": {
+        "solcVersion": "0.8.11",
+        "storage": [
+          {
+            "label": "_initialized",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint8",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:62",
+            "retypedFrom": "bool"
+          },
+          {
+            "label": "_initializing",
+            "offset": 1,
+            "slot": "0",
+            "type": "t_bool",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:67"
+          },
+          {
+            "label": "companies",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_mapping(t_string_memory_ptr,t_struct(Company)782_storage)",
+            "contract": "CompanyStorageV2",
+            "src": "contracts/CompanyStorageV2.sol:11"
+          },
+          {
+            "label": "didsByStatus",
+            "offset": 0,
+            "slot": "2",
+            "type": "t_mapping(t_string_memory_ptr,t_array(t_string_storage)dyn_storage)",
+            "contract": "CompanyStorageV2",
+            "src": "contracts/CompanyStorageV2.sol:12"
+          },
+          {
+            "label": "indexOfDid",
+            "offset": 0,
+            "slot": "3",
+            "type": "t_mapping(t_string_memory_ptr,t_uint256)",
+            "contract": "CompanyStorageV2",
+            "src": "contracts/CompanyStorageV2.sol:13"
+          }
+        ],
+        "types": {
+          "t_array(t_string_storage)dyn_storage": {
+            "label": "string[]",
+            "numberOfBytes": "32"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_mapping(t_string_memory_ptr,t_array(t_string_storage)dyn_storage)": {
+            "label": "mapping(string => string[])",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_string_memory_ptr,t_struct(Company)782_storage)": {
+            "label": "mapping(string => struct CompanyStorageV2.Company)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_string_memory_ptr,t_uint256)": {
+            "label": "mapping(string => uint256)",
+            "numberOfBytes": "32"
+          },
+          "t_string_memory_ptr": {
+            "label": "string",
+            "numberOfBytes": "32"
+          },
+          "t_string_storage": {
+            "label": "string",
+            "numberOfBytes": "32"
+          },
+          "t_struct(Company)782_storage": {
+            "label": "struct CompanyStorageV2.Company",
+            "members": [
+              {
+                "label": "did",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "status",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "1"
+              }
+            ],
+            "numberOfBytes": "64"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          },
+          "t_uint8": {
+            "label": "uint8",
+            "numberOfBytes": "1"
+          }
+        }
+      }
+    },
+    "2fdefb07b6b549acdd9197608dd349ee1dca6d0096f384e8b40fc51d5208d4ff": {
+      "address": "0x99AFFfaAe8920A31208694F3Cf051E12B59e147f",
+      "txHash": "0xef58c794d2f096c0c829b644c07e9af8c2750e19cf284783f01831cb7ca75977",
+      "layout": {
+        "solcVersion": "0.8.11",
+        "storage": [
+          {
+            "label": "_initialized",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint8",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:62",
+            "retypedFrom": "bool"
+          },
+          {
+            "label": "_initializing",
+            "offset": 1,
+            "slot": "0",
+            "type": "t_bool",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:67"
+          },
+          {
+            "label": "companies",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_mapping(t_string_memory_ptr,t_struct(Company)462_storage)",
+            "contract": "CompanyStorage",
+            "src": "contracts/CompanyStorage.sol:11"
+          },
+          {
+            "label": "publicAddressByStatus",
+            "offset": 0,
+            "slot": "2",
+            "type": "t_mapping(t_string_memory_ptr,t_array(t_string_storage)dyn_storage)",
+            "contract": "CompanyStorage",
+            "src": "contracts/CompanyStorage.sol:12"
+          },
+          {
+            "label": "indexOfPublicAddress",
+            "offset": 0,
+            "slot": "3",
+            "type": "t_mapping(t_string_memory_ptr,t_uint256)",
+            "contract": "CompanyStorage",
+            "src": "contracts/CompanyStorage.sol:13"
+          }
+        ],
+        "types": {
+          "t_array(t_string_storage)dyn_storage": {
+            "label": "string[]",
+            "numberOfBytes": "32"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_mapping(t_string_memory_ptr,t_array(t_string_storage)dyn_storage)": {
+            "label": "mapping(string => string[])",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_string_memory_ptr,t_struct(Company)462_storage)": {
+            "label": "mapping(string => struct CompanyStorage.Company)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_string_memory_ptr,t_uint256)": {
+            "label": "mapping(string => uint256)",
+            "numberOfBytes": "32"
+          },
+          "t_string_memory_ptr": {
+            "label": "string",
+            "numberOfBytes": "32"
+          },
+          "t_string_storage": {
+            "label": "string",
+            "numberOfBytes": "32"
+          },
+          "t_struct(Company)462_storage": {
+            "label": "struct CompanyStorage.Company",
+            "members": [
+              {
+                "label": "publicAddress",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "status",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "1"
+              }
+            ],
+            "numberOfBytes": "64"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          },
+          "t_uint8": {
+            "label": "uint8",
+            "numberOfBytes": "1"
+          }
+        }
+      }
+    },
+    "bc7f4d06b985ef8b4164c76ac4a090591bc8b26bdfb136e8b796337057c9a06c": {
+      "address": "0xfCd7761aD32674076c3C0EFc5e76048ae91C30eD",
+      "txHash": "0x94b64e86cb24973c30e76c38dc55427094c732e4f45db2b5c5f6f5d307727115",
+      "layout": {
+        "solcVersion": "0.8.11",
+        "storage": [
+          {
+            "label": "_initialized",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint8",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:62",
+            "retypedFrom": "bool"
+          },
+          {
+            "label": "_initializing",
+            "offset": 1,
+            "slot": "0",
+            "type": "t_bool",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:67"
+          },
+          {
+            "label": "companies",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_mapping(t_string_memory_ptr,t_struct(Company)782_storage)",
+            "contract": "CompanyStorageV2",
+            "src": "contracts/CompanyStorageV2.sol:11"
+          },
+          {
+            "label": "publicAddressByStatus",
+            "offset": 0,
+            "slot": "2",
+            "type": "t_mapping(t_string_memory_ptr,t_array(t_string_storage)dyn_storage)",
+            "contract": "CompanyStorageV2",
+            "src": "contracts/CompanyStorageV2.sol:12"
+          },
+          {
+            "label": "indexOfPublicAddress",
+            "offset": 0,
+            "slot": "3",
+            "type": "t_mapping(t_string_memory_ptr,t_uint256)",
+            "contract": "CompanyStorageV2",
+            "src": "contracts/CompanyStorageV2.sol:13"
+          }
+        ],
+        "types": {
+          "t_array(t_string_storage)dyn_storage": {
+            "label": "string[]",
+            "numberOfBytes": "32"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_mapping(t_string_memory_ptr,t_array(t_string_storage)dyn_storage)": {
+            "label": "mapping(string => string[])",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_string_memory_ptr,t_struct(Company)782_storage)": {
+            "label": "mapping(string => struct CompanyStorageV2.Company)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_string_memory_ptr,t_uint256)": {
+            "label": "mapping(string => uint256)",
+            "numberOfBytes": "32"
+          },
+          "t_string_memory_ptr": {
+            "label": "string",
+            "numberOfBytes": "32"
+          },
+          "t_string_storage": {
+            "label": "string",
+            "numberOfBytes": "32"
+          },
+          "t_struct(Company)782_storage": {
+            "label": "struct CompanyStorageV2.Company",
+            "members": [
+              {
+                "label": "publicAddress",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "status",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "1"
+              }
+            ],
+            "numberOfBytes": "64"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          },
+          "t_uint8": {
+            "label": "uint8",
+            "numberOfBytes": "1"
+          }
+        }
+      }
+    },
+    "4e9f737e888068238911b603d8de405306c0d9efcd1e20ce8f0412e28944066f": {
+      "address": "0x36C394B94C2b765fB925AeD01e527be28571E91C",
+      "txHash": "0xc9cefae599e47e0da85821c423aa527475a9637f0de49a1aec6d12d054984bfe",
+      "layout": {
+        "solcVersion": "0.8.11",
+        "storage": [
+          {
+            "label": "_initialized",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint8",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:62",
+            "retypedFrom": "bool"
+          },
+          {
+            "label": "_initializing",
+            "offset": 1,
+            "slot": "0",
+            "type": "t_bool",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:67"
+          },
+          {
+            "label": "companies",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_mapping(t_string_memory_ptr,t_struct(Company)462_storage)",
+            "contract": "CompanyStorageV2",
+            "src": "contracts/CompanyStorageV2.sol:11"
+          },
+          {
+            "label": "publicAddressByStatus",
+            "offset": 0,
+            "slot": "2",
+            "type": "t_mapping(t_string_memory_ptr,t_array(t_string_storage)dyn_storage)",
+            "contract": "CompanyStorageV2",
+            "src": "contracts/CompanyStorageV2.sol:12"
+          },
+          {
+            "label": "indexOfPublicAddress",
+            "offset": 0,
+            "slot": "3",
+            "type": "t_mapping(t_string_memory_ptr,t_uint256)",
+            "contract": "CompanyStorageV2",
+            "src": "contracts/CompanyStorageV2.sol:13"
+          }
+        ],
+        "types": {
+          "t_array(t_string_storage)dyn_storage": {
+            "label": "string[]",
+            "numberOfBytes": "32"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_mapping(t_string_memory_ptr,t_array(t_string_storage)dyn_storage)": {
+            "label": "mapping(string => string[])",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_string_memory_ptr,t_struct(Company)462_storage)": {
+            "label": "mapping(string => struct CompanyStorageV2.Company)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_string_memory_ptr,t_uint256)": {
+            "label": "mapping(string => uint256)",
+            "numberOfBytes": "32"
+          },
+          "t_string_memory_ptr": {
+            "label": "string",
+            "numberOfBytes": "32"
+          },
+          "t_string_storage": {
+            "label": "string",
+            "numberOfBytes": "32"
+          },
+          "t_struct(Company)462_storage": {
+            "label": "struct CompanyStorageV2.Company",
+            "members": [
+              {
+                "label": "publicAddress",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "status",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "1"
+              }
+            ],
+            "numberOfBytes": "64"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          },
+          "t_uint8": {
+            "label": "uint8",
+            "numberOfBytes": "1"
+          }
+        }
+      }
+    },
+    "e6e241e3b41ac5e56ba2ff3b3afd63fa19d162a8a354f2a6f03d2907c8d11333": {
+      "address": "0xaB8000Dbb903ceEe384D638D29FE0B8A9190Edd4",
+      "txHash": "0xbdc48f33eb0347c9137905b81ecf83227cde7dff33250f8389d5b45d00ec00db",
+      "layout": {
+        "solcVersion": "0.8.11",
+        "storage": [
+          {
+            "label": "_initialized",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint8",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:62",
+            "retypedFrom": "bool"
+          },
+          {
+            "label": "_initializing",
+            "offset": 1,
+            "slot": "0",
+            "type": "t_bool",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:67"
+          },
+          {
+            "label": "companies",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_mapping(t_string_memory_ptr,t_struct(Company)462_storage)",
+            "contract": "CompanyStorageV2",
+            "src": "contracts/CompanyStorageV2.sol:11"
+          },
+          {
+            "label": "publicAddressByStatus",
+            "offset": 0,
+            "slot": "2",
+            "type": "t_mapping(t_string_memory_ptr,t_array(t_string_storage)dyn_storage)",
+            "contract": "CompanyStorageV2",
+            "src": "contracts/CompanyStorageV2.sol:12"
+          },
+          {
+            "label": "indexOfPublicAddress",
+            "offset": 0,
+            "slot": "3",
+            "type": "t_mapping(t_string_memory_ptr,t_uint256)",
+            "contract": "CompanyStorageV2",
+            "src": "contracts/CompanyStorageV2.sol:13"
+          }
+        ],
+        "types": {
+          "t_array(t_string_storage)dyn_storage": {
+            "label": "string[]",
+            "numberOfBytes": "32"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_mapping(t_string_memory_ptr,t_array(t_string_storage)dyn_storage)": {
+            "label": "mapping(string => string[])",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_string_memory_ptr,t_struct(Company)462_storage)": {
+            "label": "mapping(string => struct CompanyStorageV2.Company)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_string_memory_ptr,t_uint256)": {
+            "label": "mapping(string => uint256)",
+            "numberOfBytes": "32"
+          },
+          "t_string_memory_ptr": {
+            "label": "string",
+            "numberOfBytes": "32"
+          },
+          "t_string_storage": {
+            "label": "string",
+            "numberOfBytes": "32"
+          },
+          "t_struct(Company)462_storage": {
+            "label": "struct CompanyStorageV2.Company",
+            "members": [
+              {
+                "label": "publicAddress",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "status",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "1"
+              }
+            ],
+            "numberOfBytes": "64"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          },
+          "t_uint8": {
+            "label": "uint8",
+            "numberOfBytes": "1"
+          }
+        }
+      }
+    }
+  }
+}
